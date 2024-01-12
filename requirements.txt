@@ -3,5 +3,5 @@ seaborn==0.12.1
 matplotlib==3.4.2
 pandas==1.2.4
 numpy
-plotly.express
+plotly
 WordCloud
