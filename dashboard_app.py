@@ -9,7 +9,7 @@ from wordcloud import WordCloud
 st.set_page_config(page_title="Superstore!!!", page_icon=":bar_chart:",layout="wide")
 
 # Baca data
-data_transaksi = pd.read_csv(r'C:\\Users\User\Documents\\Salsya Kerja\\PT IND INDICATOR (eBdesk)\\Tes Junior Data Analyst Scientist 2023\\datatransaksi2023.csv')
+data_transaksi = pd.read_csv(r'C:\\Users\\User\\Documents\\Salsya Kerja\\PT IND INDICATOR (eBdesk)\\Tes Junior Data Analyst Scientist 2023\\datatransaksi2023.csv')
 data_produksi = pd.read_csv(r'C:\\Users\\User\\Documents\\Salsya Kerja\\PT IND INDICATOR (eBdesk)\\Tes Junior Data Analyst Scientist 2023\\dataproduk2023.csv')
 data_user = pd.read_csv(r'C:\\Users\\User\\Documents\\Salsya Kerja\\PT IND INDICATOR (eBdesk)\\Tes Junior Data Analyst Scientist 2023\\datauser2023.csv')
 
