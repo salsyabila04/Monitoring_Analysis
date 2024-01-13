@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -9,7 +10,18 @@ from wordcloud import WordCloud
 st.set_page_config(page_title="Dashboard Monitoring", page_icon=":bar_chart:",layout="wide")
 
 # Baca data
-data_transaksi = pd.read_csv(r'C:\Users\User\Documents\Salsya Kerja\PT IND INDICATOR (eBdesk)\Tes Junior Data Analyst Scientist 2023\datatransaksi2023.csv')
+data_transaksi = pd.read_csv('C:/Users/User/Documents/Salsya Kerja/PT IND INDICATOR (eBdesk)/Tes Junior Data Analyst Scientist 2023/datatransaksi2023.csv')
+
+
+file_path = os.path.join('Documents', 'Salsya Kerja', 'PT IND INDICATOR (eBdesk)', 'Tes Junior Data Analyst Scientist 2023', 'datatransaksi2023.csv')
+data_transaksi = pd.read_csv(file_path)
+# file_path = 'C:/Users/User/Documents/Salsya Kerja/PT IND INDICATOR (eBdesk)/Tes Junior Data Analyst Scientist 2023/datatransaksi2023.csv'
+print(f"Current working directory: {os.getcwd()}")
+print(f"File path: {file_path}")
+
+data_transaksi = pd.read_csv(file_path)
+data_transaksi = pd.read_csv('datatransaksi2023.csv')
+
 data_produksi = pd.read_csv(r'C:\Users\User\Documents\Salsya Kerja\PT IND INDICATOR (eBdesk)\Tes Junior Data Analyst Scientist 2023\dataproduk2023.csv')
 data_user = pd.read_csv(r'C:\Users\User\Documents\Salsya Kerja\PT IND INDICATOR (eBdesk)\Tes Junior Data Analyst Scientist 2023\datauser2023.csv')
 
